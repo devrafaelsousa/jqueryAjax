@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/jQuaryAjax/style/style.css">
+    <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>JQuery</title>
+</head>
+<body>
+    <!-- <input id="cep" type="text">
+    <button type="button" onclick="consultaCep()" >Click here</button>
+    <p id="logradouro"></p>
+    <p id="bairro"></p>
+    <p id="cep"></p>
+    <p id="ddd"></p>
+    <p id="localidade"></p>
+    <p id="uf"></p> -->
+
+<!-- bootstrap-->
+<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+    <div class="container-fluid">
+        <a href="#" class="navbar-brand text-success" style="background-color: #e3f2fd;">Consulta CEP</a>
+        <div class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="CEP" aria-label="cep">
+            <button class="btn btn-outline-success" type="submit" onclick="consultaCep()" id="cep">Buscar</button>
+        </div>
+    </div>
+</nav>
+
+<!-- <div class="container barra-progresso">
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+    </div>
+</div> -->
+
+<!-- tabelas -->
+<div class="container cep">
+    <div class="row">
+        <h3 id="titulo-cep">CEP</h3>
+        <table class="table">
+            <tbody>
+                <tr>
+                    <td>
+                        Logradouro
+                    </td>
+                    <td  id="logradouro">
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Bairro
+                    </td>
+                    <td  id="bairro">
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Localidade
+                    </td>
+                    <td id="localidade">
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        UF
+                    </td>
+                    <td id="uf">
+                        
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<!-- scripts -->
+    <script src="./script.js"></script>
+    <script type="text/javascript" src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="./node_modules/jquery/src/ajax.js"></script>
+</body>
+</html>
